@@ -1,4 +1,3 @@
-package Day1_SantasTilingTrouble;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
@@ -17,7 +16,7 @@ public class SantasTilingTrouble {
 				priceInput = priceInput.replace(",", ".");
 				double m2price = Double.parseDouble(priceInput);
 
-				if (length <= 0 || width <= 0 || m2price <= 0.01 ) {
+				if (length <= 0 || width <= 0 || m2price < 0.01 ) {
                 System.out.println("Width and length cannot be less or equal to 0. Price cannot go lower then 1 cent");
 				}else{
 					int area = length * width;
